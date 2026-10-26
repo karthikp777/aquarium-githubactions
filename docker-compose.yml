@@ -19,6 +19,10 @@ services:
     container_name: docker-springboot
     ports:
       - "8003:8003"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresdb:5432/aquariumdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: docker
     depends_on:
       - postgresdb
     restart: on-failure
