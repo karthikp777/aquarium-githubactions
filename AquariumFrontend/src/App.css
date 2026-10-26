@@ -1,0 +1,277 @@
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.ocean-nav {
+  background: #073b55;
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.ocean-nav .navbar-nav {
+  gap: 5px;
+}
+
+.ocean-nav .nav-link {
+  padding: 8px 11px;
+  color: #d9f0f5;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.ocean-nav .nav-link:hover,
+.ocean-nav .nav-link.active {
+  color: white;
+  background: rgb(255 255 255 / 13%);
+}
+
+.hero {
+  padding: 65px 0 72px;
+  color: white;
+  background:
+    radial-gradient(ellipse at 85% 20%, #1c8495 0, transparent 38%),
+    linear-gradient(120deg, #073b55, #087e8b);
+}
+
+.hero-label,
+.section-label {
+  display: inline-block;
+  color: #15949d;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.hero-label {
+  color: #a4f4ec;
+}
+
+.hero h1 {
+  margin: 18px 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  max-width: 580px;
+  margin-bottom: 25px;
+  color: #d9f0f5;
+  line-height: 1.8;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.page-heading h2 {
+  margin: 8px 0;
+  color: #073b55;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800;
+}
+
+.page-heading h3 {
+  margin: 8px 0;
+  color: #073b55;
+  font-weight: 700;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #7a8d9c;
+}
+
+.stat-card,
+.content-card {
+  background: white;
+  border: 1px solid #e1edf2;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgb(18 64 83 / 5%);
+}
+
+.stat-card {
+  height: 100%;
+  padding: 24px;
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+}
+
+.stat-card p {
+  margin: 15px 0 4px;
+  color: #708495;
+  font-size: 0.9rem;
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #073b55;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.content-card {
+  padding: clamp(18px, 4vw, 34px);
+}
+
+.form-card {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-decoration {
+  font-size: 2.5rem;
+}
+
+.form-label {
+  color: #24465a;
+  font-weight: 600;
+}
+
+.form-control {
+  min-height: 46px;
+  border-color: #dce8ed;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #1599a6;
+  box-shadow: 0 0 0 0.2rem rgb(21 153 166 / 13%);
+}
+
+.form-hint {
+  color: #718595;
+  font-size: 0.88rem;
+}
+
+.btn-ocean {
+  padding: 10px 18px;
+  color: white;
+  background: #087e8b;
+  border: 1px solid #087e8b;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn-ocean:hover {
+  color: white;
+  background: #065c6b;
+}
+
+.aquarium-table thead th {
+  padding: 15px;
+  color: #557182;
+  background: #eff7fa;
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.aquarium-table tbody td {
+  padding: 15px;
+  border-color: #edf2f5;
+  white-space: nowrap;
+}
+
+.id-badge {
+  padding: 5px 9px;
+  color: #087e8b;
+  background: #e6f7f7;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.empty-state,
+.loading-state {
+  padding: 42px 15px;
+  text-align: center;
+}
+
+.empty-icon {
+  margin-bottom: 12px;
+  font-size: 3rem;
+}
+
+.empty-state h4 {
+  color: #173e52;
+  font-weight: 700;
+}
+
+.empty-state p,
+.loading-state p {
+  margin-top: 12px;
+  color: #7a8d9c;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 18px;
+  background: #f3f8fb;
+  border-radius: 12px;
+}
+
+.detail-item span {
+  color: #718595;
+  font-size: 0.9rem;
+}
+
+.detail-item strong {
+  color: #073b55;
+  overflow-wrap: anywhere;
+}
+
+.app-footer {
+  padding: 28px 0 10px;
+  color: #7a8d9c;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 576px) {
+  .ocean-nav {
+    padding: 11px 0;
+  }
+
+  .navbar-brand {
+    font-size: 0.95rem;
+  }
+
+  .ocean-nav .navbar-nav {
+    gap: 0;
+  }
+
+  .ocean-nav .nav-link {
+    padding: 8px 5px;
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    padding: 45px 0;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+  }
+
+  .page-heading > .btn {
+    flex-shrink: 0;
+  }
+}
