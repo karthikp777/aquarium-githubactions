@@ -23,7 +23,7 @@ public class AquariumController {
 
     @GetMapping("/")
     public String home() {
-        return "Aquarium API is running";
+        return "Aquarium Management System-2400032266";
     }
 
     @PostMapping("/add")
